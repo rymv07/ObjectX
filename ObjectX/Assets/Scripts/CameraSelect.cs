@@ -10,8 +10,8 @@ public class CameraSelect : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        chaseCamera.enabled = false;
-        mainCamera.enabled = true;
+        chaseCamera.enabled = true;
+        mainCamera.enabled = false;
     }
 
     // Update is called once per frame
@@ -19,13 +19,13 @@ public class CameraSelect : MonoBehaviour
     {
         if (Input.GetKey("1"))
         {
-            chaseCamera.enabled = false;
-            mainCamera.enabled = true;
+            chaseCamera.enabled = true;
+            mainCamera.enabled = false;
         }
         if (Input.GetKey("2"))
         {
-            chaseCamera.enabled = true;
-            mainCamera.enabled = false;
+            chaseCamera.enabled = false;
+            mainCamera.enabled = true;
         }
     }
 }
