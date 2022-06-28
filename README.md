@@ -1,2 +1,2 @@
 # ObjectX
- A alpha project
+ An alpha project
